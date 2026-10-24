@@ -315,12 +315,12 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
       const fallbackBank: BankConfig = {
         bankCode: 'MBBank',
         bankName: 'Ngân hàng Quân Đội (MB Bank)',
-        accountNumber: '0987654321',
+        accountNumber: '0983047388',
         accountName: 'HOANG VAN DAT',
         sepayApiKey: '',
         webhookToken: '',
       };
-      const qrUrl = `https://img.vietqr.io/image/MB-0987654321-compact2.png?amount=${selectedPlan.price}&addInfo=${encodeURIComponent(fakeOrderCode)}&accountName=HOANG%20VAN%20DAT`;
+      const qrUrl = `https://img.vietqr.io/image/MB-0983047388-compact2.png?amount=${selectedPlan.price}&addInfo=${encodeURIComponent(fakeOrderCode)}&accountName=HOANG%20VAN%20DAT`;
       setCurrentOrder(fallbackOrder);
       setBankConfig(fallbackBank);
       setQrUrlSepay(qrUrl);

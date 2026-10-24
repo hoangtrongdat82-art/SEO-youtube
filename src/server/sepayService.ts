@@ -77,7 +77,7 @@ const DEFAULT_PLANS: PaymentPlan[] = [
 const DEFAULT_BANK_CONFIG: BankConfig = {
   bankCode: 'MBBank',
   bankName: 'Ngân hàng Quân Đội (MB Bank)',
-  accountNumber: '0987654321',
+  accountNumber: '0983047388',
   accountName: 'HOANG VAN DAT',
   sepayApiKey: '',
   webhookToken: '',
