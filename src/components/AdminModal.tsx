@@ -192,8 +192,20 @@ export const AdminModal: React.FC<AdminModalProps> = ({ isOpen, onClose, onRefre
   });
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-slate-950/80 backdrop-blur-md overflow-y-auto animate-fade-in">
-      <div className="relative w-full max-w-5xl bg-slate-900 border border-blue-500/40 rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-slate-950/50 backdrop-blur-xl overflow-y-auto animate-backdrop-in">
+      {/* Radiant ambient spotlight shining behind the admin modal */}
+      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.32)_0%,_rgba(14,165,233,0.18)_35%,_rgba(15,23,42,0.65)_75%)] pointer-events-none" />
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[800px] bg-gradient-to-tr from-blue-600/25 via-cyan-400/20 to-indigo-600/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
+
+      {/* Modal Container with glowing focus halo */}
+      <div className="relative w-full max-w-5xl my-auto animate-modal-pop">
+        {/* Soft glowing backlight halo directly behind the card */}
+        <div className="absolute -inset-1.5 sm:-inset-2 bg-gradient-to-r from-blue-500/40 via-cyan-400/35 to-indigo-500/40 rounded-[32px] blur-xl opacity-90 pointer-events-none" />
+
+        <div className="relative w-full bg-slate-900 border border-cyan-400/45 ring-1 ring-white/10 rounded-3xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85),0_0_60px_-10px_rgba(56,189,248,0.4)] overflow-hidden flex flex-col max-h-[90vh]">
+          {/* Top Header Glow */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-300 to-indigo-500 z-10" />
+
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4.5 border-b border-blue-900/40 bg-slate-950/70">
           <div className="flex items-center gap-3">
@@ -768,6 +780,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({ isOpen, onClose, onRefre
               )}
             </div>
           )}
+        </div>
         </div>
       </div>
     </div>

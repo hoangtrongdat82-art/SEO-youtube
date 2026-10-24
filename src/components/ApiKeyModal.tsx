@@ -135,15 +135,27 @@ export const ApiKeyModal: React.FC<ApiKeyModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/50 backdrop-blur-xl animate-backdrop-in"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="w-full max-w-lg bg-slate-900 border border-blue-900/60 rounded-3xl p-6 sm:p-7 shadow-2xl text-left relative overflow-hidden">
-        {/* Decorative ambient blue glow */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Radiant ambient spotlight shining behind the popup */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.35)_0%,_rgba(56,189,248,0.18)_30%,_rgba(15,23,42,0.65)_75%)] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-gradient-to-tr from-blue-500/30 via-cyan-400/25 to-indigo-500/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
+
+      {/* Modal Container with glowing focus halo */}
+      <div className="relative w-full max-w-lg animate-modal-pop">
+        {/* Soft glowing backlight halo directly behind the card */}
+        <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-500/40 via-cyan-400/40 to-blue-600/40 rounded-[28px] blur-xl opacity-90 pointer-events-none" />
+
+        <div className="relative w-full bg-slate-900/95 border border-cyan-400/40 ring-1 ring-white/10 rounded-3xl p-6 sm:p-7 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85),0_0_60px_-10px_rgba(56,189,248,0.45)] text-left overflow-hidden">
+          {/* Subtle top edge specular highlight */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-300 to-indigo-500" />
+
+          {/* Decorative ambient blue glow */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Modal Header */}
         <div className="flex items-center justify-between pb-4 mb-5 border-b border-blue-900/40 relative">
@@ -315,6 +327,7 @@ export const ApiKeyModal: React.FC<ApiKeyModalProps> = ({
             </div>
           </div>
         </form>
+        </div>
       </div>
     </div>
   );
