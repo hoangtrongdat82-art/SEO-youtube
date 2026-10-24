@@ -1,0 +1,106 @@
+{
+  "bankConfig": {
+    "bankCode": "MBBank",
+    "bankName": "Ngân hàng Quân Đội (MB Bank)",
+    "accountNumber": "0987654321",
+    "accountName": "HOANG VAN DAT",
+    "sepayApiKey": "",
+    "webhookToken": ""
+  },
+  "plans": [
+    {
+      "id": "plan-7-days",
+      "name": "Gói 7 Ngày",
+      "days": 7,
+      "price": 99000,
+      "formattedPrice": "99.000đ",
+      "description": "Thích hợp trải nghiệm đầy đủ tính năng và tối ưu hóa video nhanh chóng.",
+      "features": [
+        "Phân tích từ khóa chuyên sâu kèm Volume & Cạnh tranh",
+        "Thiết kế 10 tiêu đề đạt tỷ lệ CTR vượt trội",
+        "Tạo mô tả chuẩn SEO & 3 hashtag chuẩn xác",
+        "Đề xuất 25 Hashtag mở rộng độ phủ",
+        "Tạo Prompt ảnh đại diện YouTube (Midjourney / DALL-E)",
+        "Hỗ trợ xuất file TXT đầy đủ 1-click"
+      ],
+      "isActive": true,
+      "isFeatured": false,
+      "badge": "Cơ bản"
+    },
+    {
+      "id": "plan-30-days",
+      "name": "Gói 30 Ngày (1 Tháng)",
+      "days": 30,
+      "price": 199000,
+      "formattedPrice": "199.000đ",
+      "description": "Lựa chọn phổ biến nhất cho YouTuber muốn bứt phá thứ hạng và đẩy video lên Top 1.",
+      "features": [
+        "Không giới hạn lượt tạo đề tài & từ khóa",
+        "Toàn bộ tính năng SEO YouTube Pro bản quyền",
+        "Tối ưu thuật toán YouTube mới nhất",
+        "Tạo Prompt thumbnail điện quang cực nét",
+        "Tích hợp kết nối Gemini API riêng",
+        "Hỗ trợ ưu tiên 24/7 từ đội ngũ Hoàng Văn Đạt"
+      ],
+      "isActive": true,
+      "isFeatured": true,
+      "badge": "Phổ biến nhất ★"
+    },
+    {
+      "id": "plan-90-days",
+      "name": "Gói 90 Ngày (3 Tháng)",
+      "days": 90,
+      "price": 499000,
+      "formattedPrice": "499.000đ",
+      "description": "Tiết kiệm 30% chi phí - Giải pháp hoàn hảo cho Kênh YouTube phát triển bền vững.",
+      "features": [
+        "Thời hạn sử dụng dài hạn 90 ngày liên tục",
+        "Tiết kiệm đến 30% so với gia hạn từng tháng",
+        "Tất cả tính năng cao cấp nhất của SEO Pro",
+        "Cập nhật prompt và thuật toán định kỳ",
+        "Được tư vấn chiến lược đẩy Top 1 YouTube",
+        "Hỗ trợ kỹ thuật VIP trực tiếp"
+      ],
+      "isActive": true,
+      "isFeatured": false,
+      "badge": "Tiết kiệm 30%"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ord_1792569547491_wfl10",
+      "order_code": "AFF000001",
+      "plan_id": "plan-7-days",
+      "plan_name": "Gói 7 Ngày",
+      "plan_days": 7,
+      "amount": 99000,
+      "customer_name": "Nguyễn Văn Test",
+      "customer_email": "test@example.com",
+      "customer_phone": "0901234567",
+      "notes": "",
+      "status": "paid",
+      "created_at": "2026-10-21T07:59:07.491Z",
+      "payment_content": "AFF000001",
+      "paid_at": "2026-10-21T07:59:11.551Z",
+      "expired_at": "2026-10-28T07:59:11.551Z",
+      "gateway": "Demo Simulation (SePay)",
+      "transaction_ref": "SIM_1792569551551"
+    }
+  ],
+  "webhookLogs": [],
+  "subscriptions": [
+    {
+      "orderCode": "AFF000001",
+      "planName": "Gói 7 Ngày",
+      "planDays": 7,
+      "amount": 99000,
+      "customerName": "Nguyễn Văn Test",
+      "customerEmail": "test@example.com",
+      "customerPhone": "0901234567",
+      "paidAt": "2026-10-21T07:59:11.551Z",
+      "expiredAt": "2026-10-28T07:59:11.551Z",
+      "status": "active"
+    }
+  ],
+  "orderCounter": 2
+}

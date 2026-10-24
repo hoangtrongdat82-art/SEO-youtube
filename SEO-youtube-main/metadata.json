@@ -1,0 +1,6 @@
+{
+  "name": "SST – SEO System Top",
+  "description": "Công cụ AI hỗ trợ tìm từ khóa, tạo tiêu đề, mô tả, tag và hashtag YouTube chuẩn SEO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
